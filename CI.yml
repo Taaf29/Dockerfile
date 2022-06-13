@@ -5,5 +5,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     -uses: actions/seeV2
-    -name: run test
-    -run:
+    -name: run tests
+    -run:  |
+      pip install pytest
+      pytest
