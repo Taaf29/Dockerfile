@@ -1,0 +1,9 @@
+name: CI
+on: [push]
+jobs:
+  exo1_push:
+  runs-on: ubuntu-latest
+  steps:
+    -uses: actions/seeV2
+    -name: run test
+    -run:
