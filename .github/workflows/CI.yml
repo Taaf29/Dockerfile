@@ -13,5 +13,5 @@ jobs:
     -run:
       docker build -t exo11_initiale_nom .
     -name: run docker image
-      run:
+    run:
       docker run exo11_initiale_nom
