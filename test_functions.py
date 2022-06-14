@@ -9,8 +9,8 @@ def test_count_char():
 
 def test1_maj ():
     input1 = "Bonjour" 
-    input2 = "BNnjour"
-    input3 = "BOnjour"
+    input2 = "bonjour"
+    input3 = "bOnjour"
 
     expected1 = True
     expected2 = False
@@ -25,7 +25,7 @@ def test1_maj ():
     assert expected3 == result3
 
 def test2_special():
-    input1="Bonjouro" 
+    input1="Bonjour!" 
     input2="Bonjour"
 
     expected1=True
@@ -38,9 +38,9 @@ def test2_special():
     assert expected2==result2
 
 def test3_valid():
-    input1="Bonjour" 
+    input1="Bonjoulklr!" 
     input2="Bonjouro"
-    input3="Bonjouro!!"
+    input3="kjnjour"
 
     expected1=True
     expected2=False
