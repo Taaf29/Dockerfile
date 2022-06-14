@@ -8,21 +8,25 @@ def test_count_char():
     assert expected == result
 
 def test1_maj ():
-    input1="hi" 
-    input2="yo"
+    input1 = "Bonjour" 
+    input2 = "BNnjour"
+    input3 = "BOnjour"
 
-    expected1=True
-    expected2=False
+    expected1 = True
+    expected2 = False
+    expected3 = True
 
-    result1=check_if_maj(input1)
-    result2=check_if_maj(input2)
+    result1 = check_if_maj(input1)
+    result2 = check_if_maj(input2)
+    result3 = check_if_maj(input3)
     
-    assert expected1==result1
-    assert expected2==result2
+    assert expected1 == result1
+    assert expected2 == result2
+    assert expected3 == result3
 
 def test2_special():
-    input1="hi sir" 
-    input2="yohoho"
+    input1="Bonjouro" 
+    input2="Bonjour"
 
     expected1=True
     expected2=False
@@ -32,3 +36,21 @@ def test2_special():
 
     assert expected1==result1
     assert expected2==result2
+
+def test3_valid():
+    input1="Bonjour" 
+    input2="Bonjouro"
+    input3="Bonjouro!!"
+
+    expected1=True
+    expected2=False
+    expected3=False
+
+
+    result1 = check_if_valid_password(input1)
+    result2 = check_if_valid_password(input2)
+    result3 = check_if_valid_password(input3)
+
+    assert expected1 == result1
+    assert expected2 == result2
+    assert expected3 == result3
