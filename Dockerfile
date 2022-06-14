@@ -6,12 +6,10 @@ RUN apt-get install python3 -y
 
 RUN apt-get install python3-pip -y
 
-
 WORKDIR /random
 
 COPY . .
 
-RUN pytest
 
 CMD ["python3", "main.py"]
 
