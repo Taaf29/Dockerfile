@@ -9,9 +9,3 @@ jobs:
       run: |
         pip install pytest
         pytest
-    -name: build docker image
-      run:
-        docker build -t exo11_initiale_nom .
-    -name: run docker image
-      run:
-        docker run exo11_initiale_nom
